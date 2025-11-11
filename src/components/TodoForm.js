@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/api/todos';
+const API_URL = 'https://todo-list-api-kflt.onrender.com/api/todos';
 
 const TodoForm = ({onTodoAdded}) =>{
     const [title, setTitle] = useState('');
     const [description, setDescription]= useState('');
 
     const handleSubmit =async(e) =>{
-        e.preventDefault(); // Yazım hatası düzeltildi: preventDefault
+        e.preventDefault(); 
 
-        // Başlığın boş olup olmadığını kontrol et
+        
         if (!title.trim()) {
             alert('Title cannot be empty!');
             return;
@@ -23,7 +23,7 @@ const TodoForm = ({onTodoAdded}) =>{
             setDescription('');
         }catch(error){
             console.error('Error adding todo: ', error);
-            alert('Failed to add todo. Please try again.'); // Kullanıcıya hata bildirimi
+            alert('Failed to add todo. Please try again.'); 
         }
     };
 

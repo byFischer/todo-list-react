@@ -4,7 +4,7 @@ import './App.css';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 
-const API_URL = 'http://localhost:8080/api/todos';
+const API_URL = 'https://todo-list-api-kk1l.onrender.com/api/todos';
 
 function App() {
   const [todos, setTodos] = useState([]);
