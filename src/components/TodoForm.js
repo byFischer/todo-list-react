@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const API_URL = 'https://todo-list-api-kflt.onrender.com/api/todos';
+const API_URL = 'https://todo-list-api-kk1l.onrender.com/api/todos';
 
 const TodoForm = ({onTodoAdded}) =>{
     const [title, setTitle] = useState('');
